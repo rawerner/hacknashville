@@ -8,7 +8,7 @@ A web application that connects Nashville's Women Technologists with young women
 Technology Stack
 ---------------------
 
-* Front End Languages *
+*Front End Languages*
 - HTML5
 - Sass 3.3.6 (not SCSS and not CSS)
 - JavaScript 1.8.5
