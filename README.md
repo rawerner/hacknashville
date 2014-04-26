@@ -17,15 +17,15 @@ Technology Stack
 #### Database
 - PostgreSQL 0.17.1 (gem)
 
-### Source Control
+#### Source Control
 - Git
 - GitHub
 
-### Deployment
+#### Deployment
 - Amazon Web Services
 - Heroku
 
-### Back End Language Choices
+#### Back End Language Choices
 - Ruby 2.1.1
 - Rails 4.1.0
 
