@@ -1,18 +1,24 @@
 HackNashville 5 eMentoring Application
 ==========
 
+
 Overview
 ---------------------
 A web application that connects Nashville's Women Technologists with young women in high school and college.
 
+
 Technology Stack
 ---------------------
 
-#### Front End Languages
+#### Front End 
 - HTML5
 - Sass 3.3.6 (not SCSS and not CSS)
 - JavaScript 1.8.5
 - jQuery
+
+#### Back End 
+- Ruby 2.1.1
+- Rails 4.1.0
 
 #### Database
 - PostgreSQL 0.17.1 (gem)
@@ -25,15 +31,13 @@ Technology Stack
 - Amazon Web Services
 - Heroku
 
-#### Back End Language Choices
-- Ruby 2.1.1
-- Rails 4.1.0
 
 Directions To Get Started
 ---------------------
 - Fork this repository
 - Make your changes
 - Submit a pull request
+
 
 Running The Application
 ---------------------
@@ -43,9 +47,9 @@ $ bundle install
 $ ruby app.rb
 ````
 
+
 Compiling The Assets
 ---------------------
-
 ````bash
 $ bundle exec guard
 ````
