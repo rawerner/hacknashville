@@ -11,17 +11,17 @@ Technology Stack
 ---------------------
 
 #### Front End 
-- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-- [Sass 3.3.6](https://rubygems.org/gems/sass) (not SCSS and not CSS)
-- [JavaScript 1.8.5](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [jQuery 1.11.0](http://jquery.com/)
+- [HTML - 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [Sass - 3.3.6](https://rubygems.org/gems/sass) (not SCSS and not CSS)
+- [JavaScript - 1.8.5](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [jQuery - 1.11.0](http://jquery.com/)
 
 #### Back End 
-- [Ruby 2.1.1](https://www.ruby-lang.org/)
-- [Rails 4.1.0](http://rubyonrails.org/)
+- [Ruby - 2.1.1](https://www.ruby-lang.org/)
+- [Rails - 4.1.0](http://rubyonrails.org/)
 
 #### Database
-- [PostgreSQL 0.17.1](http://www.postgresql.org/)
+- [PostgreSQL - 0.17.1](http://www.postgresql.org/)
 
 #### Source Control
 - [Git](http://git-scm.com/)
