@@ -13,6 +13,7 @@ Technology Stack
 #### Front End 
 - [HTML - 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 - [Sass - 3.3.6](https://rubygems.org/gems/sass) (not SCSS)
+- [Compass - 0.12.6](http://compass-style.org/)
 - [JavaScript - 1.8.5](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [jQuery - 1.11.0](http://jquery.com/)
 
