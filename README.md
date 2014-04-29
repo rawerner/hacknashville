@@ -33,7 +33,7 @@ Technology Stack
 - [Heroku](https://www.heroku.com/)
 
 
-Installing postgreSQL locally for testing
+Installing Ruby & postgreSQL locally (Assumes you are using RVM & Homebrew)
 ---------------------
 - run `rvm list` to make sure ruby 2.1.1 is installed and in use.
 - run `brew update` then `brew doctor`
@@ -42,6 +42,7 @@ Installing postgreSQL locally for testing
 - install lunchy `gem install lunchy`
 - run `lunchy start postgres`
 
+
 Directions to get started with project files
 ---------------------
 - Clone this repository - git@github.com:rawerner/hacknashville.git
@@ -49,8 +50,19 @@ Directions to get started with project files
 - run `rails server`
 - run `bin/rake db:create db:migrate`
 - view localhost:3000 in browser
-- To start coding a feature make your own branch for every feature - git checkout -b branchname
-- When ready to merge feature code then push branch to github and create a pull request - https://github.com/rawerner/hacknashville/pulls
+
+
+Working on a feature for the project?
+---------------------
+1. update master `git pull origin master`
+2. Create a branch to work on named after your feature. `git checkout -b branchname`
+2. code code code your little heart out
+
+
+Ready to merge and deploying your feature code?
+----------------------
+Commit and push your feature branch to github and create a pull request [HERE](https://github.com/rawerner/hacknashville/pulls)
+
 
 
 Running The Application
