@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: hacknashville_production
-  username: hacknashville
-  password: <%= ENV['HACKNASHVILLE_DATABASE_PASSWORD'] %>
+
+
