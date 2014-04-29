@@ -33,7 +33,7 @@ Technology Stack
 - [Heroku](https://www.heroku.com/)
 
 
-Installing postgresql locally for testing
+Installing postgreSQL locally for testing
 ---------------------
 - run `rvm list` to make sure ruby 2.1.1 is installed and in use.
 - run `brew update` then `brew doctor`
