@@ -1,28 +1,24 @@
-HackNashville 5 eMentoring Application Deployment
-==========
+###Provision A Server
+- TBD: Probaby using Ansible
 
-Provision A Server
----------------------
-TBD: Probaby using Ansible
+###Deploy New Versions
+- TBD Ansible or Capistrano
 
-Deploy New Versions
----------------------
-TBD Ansible or Capistrano
+###Stack
+- Server OS: Ubuntu 14.04
+- Production DB: PostgreSQL
+- App Server: Passenger
+- Reverse Proxy: Nginx
 
-Stack
----------------------
-Server OS: Ubuntu 14.04
-Production DB: PostgreSQL
-App Server: Passenger
-Reverse Proxy: Nginx
+###Environment Variables
+- Two environment variables are required for deployment and provisioning:
 
-Environment Variables
----------------------
-Two environment variables are required for deployment and provisioning:
+<code>
 
 export RDS_USERNAME="app_and_db_server_username";
+
 export RDS_PASSWORD="db_password";
 
-Configuration management
----------------------
-TBD
+</code>
+###Configuration management
+- TBD
