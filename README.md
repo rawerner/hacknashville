@@ -6,6 +6,17 @@ Overview
 ---------------------
 A web application that connects Nashville's Women Technologists with young women in high school and college.
 
+###Quick MVC Design Points:
+- Mentee will create a profile and add interests.
+- Mentor will create profile and add skills and areas of expertise, and how many hours a week they can dedicate.
+- Mentees will be able to filter mentor list
+- Mentees will initiate contact with Mentors by “requesting mentorship”
+- Mentors can accept or decline a mentee request
+- Mentors must give a reason for declining a request
+- Mentors when accepting requests will need to select mentorship duration by number of weeks.
+- All communication will be driven by email (masking?) on our first iteration.
+
+
 
 Technology Stack
 ---------------------
@@ -22,7 +33,11 @@ Technology Stack
 - [Rails - 4.1.0](http://rubyonrails.org/)
 
 #### Database
-- [PostgreSQL - 0.17.1](http://www.postgresql.org/) run
+- [PostgreSQL - 0.17.1](http://www.postgresql.org/)
+
+#### Testing
+- [Cucumber](https://rubygems.org/gems/cucumber)
+- [RSpec](https://rubygems.org/gems/rspec)
 
 #### Source Control
 - [Git](http://git-scm.com/)
@@ -30,11 +45,10 @@ Technology Stack
 
 #### Deployment
 - [Amazon Web Services](http://aws.amazon.com/)
-- [Heroku](https://www.heroku.com/)
 
 
-Installing Ruby & postgreSQL locally (Assumes you are using RVM & Homebrew)
----------------------
+###Installing Ruby 2.1.1 & postgreSQL locally (Assumes you are using RVM & Homebrew)
+
 - run `rvm list` to make sure ruby 2.1.1 is installed and in use.
 - run `brew update` then `brew doctor`
 - install postgresql `brew install postgresql`
@@ -43,30 +57,31 @@ Installing Ruby & postgreSQL locally (Assumes you are using RVM & Homebrew)
 - run `lunchy start postgres`
 
 
-Directions to get started with project files
----------------------
-- Clone this repository - git@github.com:rawerner/hacknashville.git
+###Directions to get started with project files
+
+- fork this repository - https://github.com/rawerner/hacknashville
+- clone your fork locally and make feature branches to work off of
 - run `bundle update` then `bundle install`
 - run `rails server`
 - run `bin/rake db:create db:migrate`
-- view localhost:3000 in browser
+- view localhost:3000 in your browser
 
 
-Working on a feature for the project?
----------------------
-1. update master `git pull origin master`
+###Working on a feature for the project?
+
+1. update your remote repository from upstream [How to?](https://blogs.atlassian.com/2013/07/git-upstreams-forks/)
+2. update your local code `git pull origin master`
 2. Create a branch to work on named after your feature. `git checkout -b branchname`
 2. code code code your little heart out
 
 
-Ready to merge and deploying your feature code?
-----------------------
-Commit and push your feature branch to github and create a pull request [HERE](https://github.com/rawerner/hacknashville/pulls)
+###Ready to merge your feature code into the main repo?
+
+Commit and push your feature branch to your remote fork on github and create a pull request
 
 
+###Running The Application
 
-Running The Application
----------------------
 ````bash
 $ git clone <your fork>
 $ bundle install
@@ -74,8 +89,7 @@ $ ruby app.rb
 ````
 
 
-Compiling The Assets
----------------------
+###Compiling The Assets
 ````bash
 $ bundle exec guard
 ````
