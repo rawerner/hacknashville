@@ -1,8 +1,8 @@
 ###Provision A Server
-- TBD: Probaby using Ansible
+TBD: Probaby using Ansible
 
 ###Deploy New Versions
-- TBD Ansible or Capistrano
+TBD Ansible or Capistrano
 
 ###Stack
 - Server OS: Ubuntu 14.04
@@ -13,12 +13,9 @@
 ###Environment Variables
 - Two environment variables are required for deployment and provisioning:
 
-<code>
-
 export RDS_USERNAME="app_and_db_server_username";
 
 export RDS_PASSWORD="db_password";
 
-</code>
 ###Configuration management
-- TBD
+TBD
