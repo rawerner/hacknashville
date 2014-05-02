@@ -81,6 +81,5 @@ test:
 production:
   <<: *default
   database: hacknashville_production
-  host: <%= ["DATABASE_URL"] %>
   username: <%= ENV["RDS_USERNAME"] %>
   password: <%= ENV["RDS_PASSWORD"] %>
