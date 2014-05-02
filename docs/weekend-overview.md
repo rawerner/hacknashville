@@ -1,8 +1,8 @@
 ###HackNashville Schedule
 
 May 2  
-6pm-7pm Meet & Greet(food provided)  
-7pm-10pm: share your idea and form teams  
+6pm- 7pm Meet & Greet (food provided)  
+7pm- 10pm: share your idea and form teams  
 *staying overnight is allowed but not required
 
 May 3  
@@ -11,7 +11,7 @@ Food & Beverage provided
 *staying overnight is allowed but not required
 
 May 4  
-8am - 5pm Finall work on Team Projects  
+8am - 5pm Final work on Team Projects  
 5pm - 8pm Expo-style project demos  
 *ALL are welcome at the demos
 
