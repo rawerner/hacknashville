@@ -7,7 +7,6 @@ User Stories - Mentors
 
 ###Update Records
 <pre>As a mentor I want to update my profile with new information</pre>
-<pre>As a mentor I would like my profile info synced with linkedIn</pre>
 <pre>As a mentor I would like to be able to deactivate my account if I need to step away from mentoring</pre>
 
 
@@ -15,8 +14,13 @@ User Stories - Mentors
 <pre>As a mentor I want to delete my profile because I can no longer mentor</pre>
 
 ###Read Records
-<pre>As a Mentor I would like to search for mentees of certain interests (technical skills & soft skills)</pre>
-<pre>As a Mentor I would like sort my search by best match, location, alphabetical</pre>
+<pre>As a Mentor I would like to have a place to view all my mentee information</pre>
+<pre>As a Mentor I would like to to be able to view my mentee requests</pre>
+
+###Other Stories
+<pre>As a Mentor I would like to to be able to accept or decline mentee requests</pre>
+<pre>As a Mentor when I accept a mentee requests I would like to specify the end date of the mentorship</pre>
+<pre>As a Mentor when decline a mentee requests I would like to offer a small message on why I'm declining</pre>
 
 
 User Stories - Mentees
@@ -33,5 +37,9 @@ User Stories - Mentees
 <pre>As a Mentee I want to delete my profile because I can no longer be mentored</pre>
 
 ###Read Records
-<pre>As a Mentee I would like to search for Mentors of certain interests (technical skills & soft skills)</pre>
-<pre>As a Mentee I would like sort my search by best match, location, alphabetical</pre>
+<pre>As a Mentee I would like to filter a list of Mentors for certain interests and availabilty</pre>
+
+###Other Stories
+<pre>As a Mentee I would like to to be able to request a mentor when I find one I like</pre>
+<pre>As a Mentee I want to be notifed when a mentor accepts my request</pre>
+
