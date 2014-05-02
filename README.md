@@ -45,8 +45,8 @@ Technology Stack
 - [GitHub](https://github.com/)
 
 #### Deployment
-- [Amazon Web Services](http://aws.amazon.com/)
-
+- [Heroku](http://heroku.com)
+- During the hackathon the livesite will be published to: http://enigmatic-caverns-7976.herokuapp.com/
 
 ###Installing Ruby 2.1.1 & postgreSQL locally (Assumes you are using RVM & Homebrew)
 
