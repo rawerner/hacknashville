@@ -7,9 +7,9 @@ Overview
 A web application that connects Nashville's Women Technologists with young women in high school and college.
 
 ###Quick MVP Design Points:
-- Mentee will register and create a profile and add interests
+- Mentee will register and create a profile
+- Mentor will register and create profile
 - Mentor has option to sign in with LinkedIn
-- Mentor will register and create profile and add skills and areas of expertise, and how many hours a week they can dedicate
 - Mentees will be able to filter mentor list
 - Mentees will initiate contact with Mentors by requesting a mentor
 - Mentors can accept or decline a mentee request
