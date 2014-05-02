@@ -46,7 +46,7 @@ Technology Stack
 
 #### Deployment
 - [Amazon Web Services](http://aws.amazon.com/)
-
+- See deployment/README.md for additional info about provisioning & deployment
 
 ###Installing Ruby 2.1.1 & postgreSQL locally (Assumes you are using RVM & Homebrew)
 
