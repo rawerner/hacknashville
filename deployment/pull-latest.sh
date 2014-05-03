@@ -6,7 +6,7 @@
 # Deploy will go ahead and deploy the latest branch to Heroku
 ###
 
-if [ which rbenv ]; then
+if [ `which rbenv` ]; then
     RUBY_DIR=~/.rbenv/versions/2.1.1/bin/
     git pull
     $RUBY_DIR/bundle install
