@@ -1,6 +1,6 @@
 #uncomment the line below if you aren't using bundler
-#require 'rubygems'
-require 'linkedin'
+# require 'rubygems'
+require 'linkedin-oauth2'
 
 class LinkedinController < ApplicationController
 
