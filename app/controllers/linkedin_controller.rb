@@ -1,6 +1,6 @@
 #uncomment the line below if you aren't using bundler
 # require 'rubygems'
-require 'linkedin-oauth2'
+require 'linkedin-oauth2' # using require 'linkedin' here breaks the build in production.
 
 class LinkedinController < ApplicationController
 
