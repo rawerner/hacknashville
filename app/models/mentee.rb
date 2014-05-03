@@ -1,2 +1,2 @@
-class Mentee < ActiveRecord::Base
-end
+# class Mentee < ActiveRecord::Base
+# end
