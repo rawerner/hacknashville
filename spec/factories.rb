@@ -12,11 +12,10 @@ FactoryGirl.define do
   #   admin false
   # end
 
-  # factory :request do
-  #   first_name "John"
-  #   last_name  "Doe"
-  #   admin false
-  # end
+  factory :request do
+    approval_status "Pending"
+    messages  "Doe"
+  end
 
   # factory :admin do
   #   first_name "Admin"

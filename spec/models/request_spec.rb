@@ -5,6 +5,19 @@ describe Request do
     @request = build(:request)
   end
 
-  it "should respond to #status" do
+  it "should have an #approval_status" do
+    binding.pry
+    @request.approval_status.should == "Pending"
+  end
+
+  # it "should not be valid without a mentor"
+  # it "should not be valid without a mentoree"
+
+  it "should store #messages" do
+    @request.should respond_to(:messages)
+  end
+
+  it "should store #feedback" do
+    @request.should respond_to(:feedback)
   end
 end
