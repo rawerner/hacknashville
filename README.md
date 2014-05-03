@@ -109,3 +109,7 @@ run in a separate terminal window
 $ bundle exec guard
 ````
 
+###Add LinkedIn/OAuth2 Gem
+Install the linkedin-oauth2 gem
+````bash
+$ gem install linkedin-oauth2
