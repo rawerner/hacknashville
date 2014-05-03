@@ -25,6 +25,3 @@ config/secrets.yml
 
 # special for rubymine
 .idea*
-
-# A local deployment utility
-pull_latest.sh
