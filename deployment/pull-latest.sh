@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 
 ####
-# Automates the process of pulling the lateset production branch.
-# Adding the argument server finishes by running a rails server in production mode (for testing)
-# Deploy will go ahead and deploy the latest branch to Heroku
+# Automates the process of pulling the latest production branch.
+#  ./pull-latest.sh server -- finishes by running a rails server in production mode (for testing)
+#  ./pull-latest.sh deploy -- will go ahead and deploy the latest branch to Heroku
 ###
 
 if [ `which rbenv` ]; then
