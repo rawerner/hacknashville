@@ -23,7 +23,7 @@ Technology Stack
 ---------------------
 
 #### Front End
-- [HTML - 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [Twitter Bootstrap 3.1.1 for Rails Asset Pipeline](https://github.com/seyhunak/twitter-bootstrap-rails/tree/bootstrap3)
 - [Sass - 3.3.6](https://rubygems.org/gems/sass) (not SCSS)
 - [Compass - 0.12.6](http://compass-style.org/)
 - [JavaScript - 1.8.5](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -62,6 +62,7 @@ Technology Stack
 
 - fork this repository - https://github.com/rawerner/hacknashville
 - clone your fork locally and make feature branches to work off of
+- follow [these instructions](https://help.github.com/articles/syncing-a-fork) to set your repository to sync with the upstream (rawerner's) repository
 - run `bundle update` then `bundle install`
 - run `rails server`
 - run `bin/rake db:create db:migrate`
