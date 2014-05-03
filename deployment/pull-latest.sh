@@ -12,7 +12,7 @@ if [ `which rbenv` ]; then
     $RUBY_DIR/bundle install
     $RUBY_DIR/rake db:migrate
     if [ "$1" = "deploy" ];
-        then ./deploy.sh
+        then ./deploy-to-heroku.sh
     fi
     if [ "$1" = "server" ];
         then $RUBY_DIR/rails server -e production;
