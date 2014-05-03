@@ -26,3 +26,12 @@ photo_url: string
 requests: integer
 </pre>
 
+
+###CareerPath
+<pre>
+name: string
+small_description: text
+long_descripition: text
+skill_tags: text
+mentors: integer
+</pre>
