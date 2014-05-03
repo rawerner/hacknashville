@@ -6,6 +6,9 @@ Overview
 ---------------------
 A web application that connects Nashville's Women Technologists with young women in high school and college.
 
+###Public Facing URL
+http://e-mentor.herokuapp.com/
+
 ###Quick MVP Design Points:
 - Mentee will register and create a profile
 - Mentor will register and create profile
@@ -46,8 +49,7 @@ Technology Stack
 
 #### Deployment
 - [Heroku](http://heroku.com)
-- During the hackathon the livesite will be published to: http://enigmatic-caverns-7976.herokuapp.com/
-
+- During the hackathon the livesite will be published to: http://e-mentor.herokuapp.com/
 ###Installing Ruby 2.1.1 & postgreSQL locally (Assumes you are using RVM & Homebrew)
 
 - run `rvm list` to make sure ruby 2.1.1 is installed and in use.
