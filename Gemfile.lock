@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/sporkrb/spork-rails.git
+  revision: 0dd45e59d3237b4c8f9efc215b46d9c07072a95e
+  specs:
+    spork-rails (4.0.0)
+      rails (>= 3.0.0, < 5)
+      spork (>= 1.0rc0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,11 +45,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    celluloid (0.15.2)
-      timers (~> 1.1.0)
-    celluloid-io (0.15.0)
-      celluloid (>= 0.15.0)
-      nio4r (>= 0.5.0)
     childprocess (0.5.3)
       ffi (~> 1.0, >= 1.0.11)
     chunky_png (1.3.1)
@@ -65,17 +68,6 @@ GEM
       simplecov (>= 0.7)
       term-ansicolor
       thor
-    cucumber (1.3.14)
-      builder (>= 2.1.2)
-      diff-lcs (>= 1.1.3)
-      gherkin (~> 2.12)
-      multi_json (>= 1.7.5, < 2.0)
-      multi_test (>= 0.1.1)
-    cucumber-rails (1.4.0)
-      capybara (>= 1.1.2)
-      cucumber (>= 1.2.0)
-      nokogiri (>= 1.5.0)
-      rails (>= 3.0.0)
     database_cleaner (1.2.0)
     devise (3.2.4)
       bcrypt (~> 3.0)
@@ -87,27 +79,13 @@ GEM
     docile (1.1.3)
     erubis (2.7.0)
     execjs (2.0.2)
-    fabrication (2.11.2)
     factory_girl (4.4.0)
       activesupport (>= 3.0.0)
+    factory_girl_rails (4.4.1)
+      factory_girl (~> 4.4.0)
+      railties (>= 3.0.0)
     ffi (1.9.3)
-    formatador (0.2.4)
     fssm (0.2.10)
-    gherkin (2.12.2)
-      multi_json (~> 1.3)
-    guard (2.6.0)
-      formatador (>= 0.2.4)
-      listen (~> 2.7)
-      lumberjack (~> 1.0)
-      pry (>= 0.9.12)
-      thor (>= 0.18.1)
-    guard-rspec (4.2.8)
-      guard (~> 2.1)
-      rspec (>= 2.14, < 4.0)
-    guard-spork (1.5.1)
-      childprocess (>= 0.2.3)
-      guard (>= 1.1)
-      spork (>= 0.8.4)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (2.0.7)
@@ -117,14 +95,10 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    jwt (0.1.11)
+      multi_json (>= 1.5)
     launchy (2.4.2)
       addressable (~> 2.3)
-    listen (2.7.4)
-      celluloid (>= 0.15.2)
-      celluloid-io (>= 0.15.0)
-      rb-fsevent (>= 0.9.3)
-      rb-inotify (>= 0.9)
-    lumberjack (1.0.5)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -133,10 +107,14 @@ GEM
     mini_portile (0.5.3)
     minitest (5.3.3)
     multi_json (1.9.3)
-    multi_test (0.1.1)
-    nio4r (1.0.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+    oauth2 (0.9.3)
+      faraday (>= 0.8, < 0.10)
+      jwt (~> 0.1.8)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (~> 1.2)
     orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.4)
@@ -168,17 +146,10 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.3.1)
-    rb-fsevent (0.9.4)
-    rb-inotify (0.9.4)
-      ffi (>= 0.5.0)
     rdoc (4.1.1)
       json (~> 1.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rspec (2.14.1)
-      rspec-core (~> 2.14.0)
-      rspec-expectations (~> 2.14.0)
-      rspec-mocks (~> 2.14.0)
     rspec-core (2.14.8)
     rspec-expectations (2.14.5)
       diff-lcs (>= 1.1.3, < 2.0)
@@ -208,9 +179,6 @@ GEM
     simplecov-html (0.8.0)
     slop (3.5.0)
     spork (1.0.0rc4)
-    spork-rails (4.0.0)
-      rails (>= 3.0.0, < 5)
-      spork (>= 1.0rc0)
     spring (1.1.2)
     sprockets (2.12.1)
       hike (~> 1.2)
@@ -226,7 +194,6 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.3)
     tilt (1.4.1)
-    timers (1.1.0)
     tins (1.1.0)
     treetop (1.4.15)
       polyglot
@@ -257,26 +224,22 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   compass-rails
   coveralls
-  cucumber-rails
   database_cleaner
   devise
-  fabrication
-  factory_girl
-  guard-rspec (~> 4.2.4)
-  guard-spork (~> 1.5.1)
+  factory_girl_rails
   jbuilder (~> 2.0)
   jquery-rails
   launchy
+  linkedin-oauth2
   pg
   pry
   rails (= 4.1.0)
   rails_12factor
-  rspec
   rspec-rails
   sass
   sdoc (~> 0.4.0)
   selenium-webdriver
-  spork-rails (~> 4.0.0)
+  spork-rails!
   spring
   turbolinks
   twitter-bootstrap-rails

@@ -23,3 +23,8 @@ config/secrets.yml
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 
+# special for rubymine
+.idea*
+
+# A local deployment utility
+pull_latest.sh

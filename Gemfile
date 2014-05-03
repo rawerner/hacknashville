@@ -14,10 +14,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'devise'
+gem 'linkedin-oauth2'
 
 group :development do
-  gem 'guard-spork', '~> 1.5.1'
-  gem 'guard-rspec', '~> 4.2.4', require: false
 end
 
 group :production do
@@ -25,13 +24,8 @@ group :production do
 end
 
 group :test, :development do
-  gem 'cucumber-rails', require: false
-  gem 'database_cleaner'
-  gem 'fabrication'
   gem 'pry'
-  gem 'rspec'
-  gem 'rspec-rails'
-  gem 'spork-rails', '~> 4.0.0'
+  gem 'spork-rails', github: 'sporkrb/spork-rails' # rubygems version not rails 4 compatible
 end
 
 group :test do
@@ -39,5 +33,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
   gem 'launchy'
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'database_cleaner'
 end
