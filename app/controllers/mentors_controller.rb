@@ -1,4 +1,4 @@
-class MenteesController < ApplicationController
+class MentorsController < ApplicationController
 
   def index
   end
@@ -11,6 +11,5 @@ class MenteesController < ApplicationController
 
   def show
   end
-
 
 end
