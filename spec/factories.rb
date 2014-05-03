@@ -22,7 +22,7 @@ FactoryGirl.define do
     username "admin"
     first_name "Admin"
     last_name  "User"
-    email "admin@maillinator.com"
-    admin      true
+    email_address "admin@maillinator.com"
+    # admin      true
   end
 end
