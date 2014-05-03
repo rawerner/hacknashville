@@ -96,6 +96,14 @@ $ ruby app.rb
 $ bundle exec guard
 ````
 
-Guard will watch for any changes that you make to app/assets and publish them to public/assets
-
+###Running Spork and Guard with RSPEC
+bundle install the gems & intialize guard
+````bash
+$ guard init spork
+$ guard init rspec
+````
+run in a separate terminal window
+````bash
+$ bundle exec guard
+````
 
