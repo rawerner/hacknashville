@@ -6,17 +6,18 @@ Overview
 ---------------------
 A web application that connects Nashville's Women Technologists with young women in high school and college.
 
-###Quick MVC Design Points:
-- Mentee will create a profile and add interests.
-- Mentor will create profile and add skills and areas of expertise, and how many hours a week they can dedicate.
+###Quick MVP Design Points:
+- Mentee will register and create a profile
+- Mentor will register and create profile
+- Mentor has option to sign in with LinkedIn
 - Mentees will be able to filter mentor list
-- Mentees will initiate contact with Mentors by “requesting mentorship”
+- Mentees will initiate contact with Mentors by requesting a mentor
 - Mentors can accept or decline a mentee request
 - Mentors must give a reason for declining a request
-- Mentors when accepting requests will need to select mentorship duration by number of weeks.
+- Mentors when accepting requests will need to assign an end date of the mentorship
 - All communication will be driven by email (masking?) on our first iteration.
 
-
+###The /doc file has resources for you
 
 Technology Stack
 ---------------------
@@ -44,8 +45,8 @@ Technology Stack
 - [GitHub](https://github.com/)
 
 #### Deployment
-- [Amazon Web Services](http://aws.amazon.com/)
-
+- [Heroku](http://heroku.com)
+- During the hackathon the livesite will be published to: http://enigmatic-caverns-7976.herokuapp.com/
 
 ###Installing Ruby 2.1.1 & postgreSQL locally (Assumes you are using RVM & Homebrew)
 

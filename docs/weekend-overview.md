@@ -1,30 +1,30 @@
 ###HackNashville Schedule
 
-May 2
-6pm-7pm Meet & Greet(food provided)
-7pm-10pm: share your idea and form teams
+May 2  
+6pm- 7pm Meet & Greet (food provided)  
+7pm- 10pm: share your idea and form teams  
 *staying overnight is allowed but not required
 
-May 3
-8am - 10pm Project Teams working feverishly
-Food & Beverage provided
+May 3  
+8am - 10pm Project Teams working feverishly  
+Food & Beverage provided  
 *staying overnight is allowed but not required
 
-May 4
-8am - 5pm Finall work on Team Projects
-5pm - 8pm Expo-style project demos
+May 4  
+8am - 5pm Final work on Team Projects  
+5pm - 8pm Expo-style project demos  
 *ALL are welcome at the demos
 
 
 ###Team Timeline
-May 2 - Team Meeting following the hackNashville idea sharing time.
-May 3 - 3pm - First code integration and deploy to amazon (important to present)
+May 2 - Team Meeting following the hackNashville idea sharing time.  
+May 3 - 3pm - First code integration and deploy to amazon (important to present)  
 May 4 - 3pm & 5pm - Second code integration and deploy to amazon (important to present)
 
 
 ###Sprints
-Sprint #1:  May 2nd @ 10pm to May 3rd @ 3pm
-Sprint #2:  May 3rd @ 3:00pm to May 4th @ 3pm
+Sprint #1:  May 2nd @ 10pm to May 3rd @ 3pm  
+Sprint #2:  May 3rd @ 3:00pm to May 4th @ 3pm  
 Mini Sprint: May 4th 3pm to 5pm
 
 
@@ -41,7 +41,7 @@ Mini Sprint: May 4th 3pm to 5pm
 
 
 ###IRC Chat Room
-- some good IRC Clients to use: (Lingo, LimeChat)
+- some good IRC Clients to use: (Lingo, LimeChat)  
 - type the following in the message field:  /join #teamhacknash
 
 
