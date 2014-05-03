@@ -17,7 +17,6 @@ gem 'devise'
 
 group :development do
   gem 'guard-spork', '~> 1.5.1'
-  gem 'guard-spork', '~> 1.5.1'
   gem 'guard-rspec', '~> 4.2.4', require: false
 end
 
@@ -40,4 +39,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
   gem 'launchy'
+  gem 'factory_girl'
 end
