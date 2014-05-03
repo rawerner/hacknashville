@@ -1,5 +1,10 @@
 require 'spec_helper'
 
 describe Request do
-  pending "add some examples to (or delete) #{__FILE__}"
+  before(:each) do
+    @request = build(:request)
+  end
+
+  it "should respond to #status" do
+  end
 end
