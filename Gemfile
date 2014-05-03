@@ -32,7 +32,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
   gem 'launchy'
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'database_cleaner'
 end
