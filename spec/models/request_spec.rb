@@ -6,7 +6,6 @@ describe Request do
   end
 
   it "should have an #approval_status" do
-    binding.pry
     @request.approval_status.should == "Pending"
   end
 

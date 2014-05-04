@@ -5,6 +5,7 @@ class Mentor < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :mentees
+  has_many :requests
 
   # attr_accessible :email, :password, :password_confirmation, :name, :photo, :skills
 end
