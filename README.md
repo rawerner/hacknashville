@@ -98,17 +98,13 @@ $ bundle exec guard
 ````
 
 ###Running Spork and Guard with RSPEC
-bundle install the gems & intialize guard
+bundle install the gems & open a new terminal window
 ````bash
-$ guard init spork
-$ guard init rspec
+$ spork
 ````
 run in a separate terminal window
 ````bash
 $ bundle exec guard
 ````
 
-###Add LinkedIn/OAuth2 Gem
-Install the linkedin-oauth2 gem
-````bash
-$ gem install linkedin-oauth2
+
