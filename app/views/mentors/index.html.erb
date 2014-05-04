@@ -1,37 +1,13 @@
 <h2>Search For a Mentor</h2>
-
-
 <div class="row">
-  <div class="col-sm-6 col-md-4">
-    <%= @mentors.each do |mentor| %>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="col-sm-3 col-md-2">
-            <%= link_to((image_tag "#{mentor.photo_url}", alt: "{mentor.last_name}", title: "#{mentor.first_name}"), "/mentor/#{mentor.id}", class: "thumbnail") %>
-              <div class="caption">
-                <h4><%= mentor.first_name + " " + mentor.last_name %></h4>
-                <p>view profile</p>
-                <p><a href="#" class="btn btn-primary" role="button">Request Mentor</a></p>
-              </div>
-
-          </div>
+  <div class="panel panel-default col-md-8">
+  <div class="panel-body">
+    <% @mentors.each do |mentor| %>
+        <div class="col-xs-4 col-sm-3 col-md-2">
+          <%= link_to((image_tag "#{mentor.photo_url}", alt: "{mentor.last_name}", title: "#{mentor.first_name}"), "/mentor/#{mentor.id}", class: "thumbnail") %> <h4><%= mentor.first_name + " " + mentor.last_name %></h4>
         </div>
-      </div>
     <% end %>
   </div>
-
-
-
-<div class="panel panel-default">
-  <div class="panel-body">
-    Basic panel example
   </div>
 </div>
 
-<div class="row">
-  <% @mentors.each do |mentor| %>
-      <div class="col-xs-4 col-sm-3 col-md-2">
-        <%= link_to((image_tag "#{mentor.photo_url}", alt: "{mentor.last_name}", title: "#{mentor.first_name}"), "/mentor/#{mentor.id}", class: "thumbnail") %>
-      </div>
-  <% end %>
-</div>
