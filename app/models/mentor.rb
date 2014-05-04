@@ -6,6 +6,4 @@ class Mentor < ActiveRecord::Base
 
   has_many :mentees
   has_many :requests
-
-
 end
