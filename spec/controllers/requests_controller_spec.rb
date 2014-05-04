@@ -8,12 +8,31 @@ describe RequestsController do
     end
   end
 
-  describe "POST #new" do
+  describe "POST #create" do
     it "should assign a new request" do
       request = build(:request)
-      get :new
-      assigns(:request).should eq request
+      get :create
+      Request.all.size.should == 1
     end
   end
+
+  # describe "PUT #update" do
+  #   it "should assign a new request" do
+  #     request = stub_model('Request')
+  #     binding.pry
+  #     get :update, { :id => request.id, :approval_status => 'Approved' }
+  #     request.approval_status.should_not == 'Pending'
+  #   end
+  # end
+
+
+  # describe "DELETE #destroy" do
+  #   it "should assign a new request" do
+  #     request = build(:request)
+  #     request.save
+  #     get :destroy, :request => { :id => request.id }
+  #     request.should_not exist
+  #   end
+  # end
 
 end

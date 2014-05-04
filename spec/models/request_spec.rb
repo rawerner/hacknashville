@@ -9,8 +9,10 @@ describe Request do
     @request.approval_status.should == "Pending"
   end
 
-  # it "should not be valid without a mentor"
-  # it "should not be valid without a mentoree"
+  # it "should not be valid without a mentor" do
+
+  it "should not be valid without a mentoree" do
+  end
 
   it "should store #messages" do
     @request.should respond_to(:messages)
