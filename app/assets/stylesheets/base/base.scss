@@ -1,0 +1,27 @@
+//SASS VARIABLES
+
+// Font Weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-weight: $bold;
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+$pink: #c27ba0;
+
+//OTHER BASE STYLES
