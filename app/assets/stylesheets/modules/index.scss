@@ -1,9 +1,27 @@
 @import 'base/base';
 
-.index-career-background {
-	background-color: $desaturated-pink;
+.index-signup {
+	background-color: $very-light-pink;
+	padding: 8%;
+	text-align: center;
+}
+
+.featured-button {
+	margin-top: 5%;
 	padding: 3%;
-	width: 100%;
+	font-size: 1.5em;
+}
+
+.featured-image {
+	text-align: center;
+}
+
+.forced-height {
+	height: 20em;
+}
+
+.selling-point-header {
+	font-size: 1em;
 }
 
 .index-features {
@@ -12,6 +30,24 @@
 }
 
 .index-career-paths {
-	background-color: $desaturated-violet;
+	background-color: $very-light-violet;
 	padding: 3%;
+  text-align: center;
+  h1 {
+  	padding-bottom: 3%;
+  }
 }
+
+h4.header-link a {
+	font-size: 1.2em;
+	text-align: center;
+}	
+
+h4.header-link-dark-background a {
+	font-size: 1.2em;
+	text-align: center;
+	color: $white;
+}
+
+
+
