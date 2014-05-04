@@ -43,6 +43,6 @@ class RequestsController < ApplicationController
   end
 
   def request_params
-    params.require(:request).permit(:approval_status, :messages, :feedback)
+    params.require(:request).permit(:approval_status, :messages, :feedback, :mentor_id, :mentee_id)
   end
 end

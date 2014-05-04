@@ -15,7 +15,7 @@ describe RequestsController do
     end
   end
 
-  # having trouble adding in parameters for the new Rspec. Must investigate!!!
+  # parameters are not being added for the new Rspec. Must investigate!!!
 
   # describe "PUT #update" do
   #   it "should assign a new request" do
