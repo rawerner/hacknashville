@@ -20,9 +20,9 @@
           <li><%= link_to "Sign Out", "/mentors/sign_out", method: :delete %></li>
         <% else %>
           <li class="active"><%= link_to "Home", root_path %></li>
-          <li><%= link_to "How it works",    root_path %></li>
-          <li><%= link_to "Sign In", "/mentors/sign_in" %></li>
-          <li><button type="button" class="btn btn-default navbar-btn"><%= link_to "Sign In", new_mentor_session_path %></button></li>
+          <li><%= link_to "How it works",    howitworks_path %></li>
+          <li><button type="button" class="btn btn-default navbar-btn"><%= link_to "Mentor Sign In", new_mentor_session_path %></button></li>
+          <li><button type="button" class="btn btn-default navbar-btn"><%= link_to "Mentee Sign In", new_mentee_session_path %></button></li>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
