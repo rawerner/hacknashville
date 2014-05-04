@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   resources :mentors
+  devise_for :mentees
   resources :mentees
   resources :requests
   # You can have the root of your site routed with "root"
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
   match '/careers',    to: 'static_pages#careers',    via: 'get'
   match '/about',         to: 'static_pages#about',         via: 'get'
   match '/privacy',       to: 'static_pages#privacy',       via: 'get'
+    match '/howitworks',       to: 'static_pages#howitworks',       via: 'get'
   match ':controller(/:action(/:id))', :via => 'get'
 
   # Example of regular route:
