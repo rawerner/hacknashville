@@ -18,9 +18,11 @@ FactoryGirl.define do
   #   admin false
   # end
 
-  # factory :admin do
-  #   first_name "Admin"
-  #   last_name  "User"
-  #   admin      true
-  # end
+  factory :admin do
+    username "admin"
+    first_name "Admin"
+    last_name  "User"
+    email_address "admin@maillinator.com"
+    # admin      true
+  end
 end

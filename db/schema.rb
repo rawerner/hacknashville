@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140504021746) do
+=======
+ActiveRecord::Schema.define(version: 20140503200318) do
+>>>>>>> develop
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,7 +30,11 @@ ActiveRecord::Schema.define(version: 20140504021746) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
   create_table "mentees", force: true do |t|
+=======
+  create_table "mentors", force: true do |t|
+>>>>>>> develop
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -37,6 +45,7 @@ ActiveRecord::Schema.define(version: 20140504021746) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+<<<<<<< HEAD
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "interest",               array: true
@@ -44,6 +53,16 @@ ActiveRecord::Schema.define(version: 20140504021746) do
 
   add_index "mentees", ["email"], name: "index_mentees_on_email", unique: true, using: :btree
   add_index "mentees", ["reset_password_token"], name: "index_mentees_on_reset_password_token", unique: true, using: :btree
+=======
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "photo_url"
+    t.integer  "skills"
+  end
+
+  add_index "mentors", ["email"], name: "index_mentors_on_email", unique: true, using: :btree
+  add_index "mentors", ["reset_password_token"], name: "index_mentors_on_reset_password_token", unique: true, using: :btree
+>>>>>>> develop
 
   create_table "requests", force: true do |t|
     t.datetime "created_at"
