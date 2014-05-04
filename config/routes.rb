@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   match '/careers',    to: 'static_pages#careers',    via: 'get'
   match '/about',         to: 'static_pages#about',         via: 'get'
   match '/privacy',       to: 'static_pages#privacy',       via: 'get'
+    match '/howitworks',       to: 'static_pages#howitworks',       via: 'get'
   match ':controller(/:action(/:id))', :via => 'get'
 
   # Example of regular route:
