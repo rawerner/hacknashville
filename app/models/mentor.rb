@@ -6,5 +6,5 @@ class Mentor < ActiveRecord::Base
 
   has_many :mentees
 
-  attr_accessible :email, :first_name, :last_name, :password, :photo_url, :skills
+
 end
