@@ -1,10 +1,11 @@
 class MenteesController < ApplicationController
 
   def create
-    @mentee = Mentee.create(mentee_params)
+    mentee = Mentee.create(mentee_params)
   end
 
   def index
+    @mentees = Mentee.all
   end
 
   def new
@@ -14,6 +15,7 @@ class MenteesController < ApplicationController
   end
 
   def show
+    @mentee = Mentee.find(params[:id])
   end
 
   private
