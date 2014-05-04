@@ -2,7 +2,7 @@ class MentorsController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @mentors = Mentors.all
+    @mentors = Mentor.all
   end
 
 
@@ -43,7 +43,7 @@ class MentorsController < ApplicationController
   private
 
   def mentor_params
-    params.require(:mentor).permit(:email, :password, :password_confirmation, :first_name, :last_name:photo_url, :skills, :id)
+    params.require(:mentor).permit(:email, :password, :first_name, :last_name, :id)
   end
 
 
