@@ -15,11 +15,15 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Career Paths", careers_path %></li>
-        <li><%= link_to "How It Works", about_path %></li>
-        <li><%= link_to "Sign In", '#' %></li>
+        <% if current_mentor %>
+          <li><%= link_to "Dashboard",  root_path %></li>
+          <li><%= link_to "Sign Out", "/mentors/sign_out", method: :delete %></li>
+        <% else %>
+          <li class="active"><%= link_to "Home", root_path %></li>
+          <li><%= link_to "How it works",    root_path %></li>
+          <li><%= link_to "Sign In", "/mentors/sign_in" %></li>
+          <li><button type="button" class="btn btn-default navbar-btn"><%= link_to "Sign In", new_mentor_session_path %></button></li>
+        <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
