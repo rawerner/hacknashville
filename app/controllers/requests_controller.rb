@@ -3,30 +3,38 @@ class RequestsController < ApplicationController
   before_filter :resources, :only => [:index]
 
   def index
-    @request
+    @requests
+  end
+
+  def new
+    @request = Request.new
   end
 
   def create
-    @request = Request.new(params[:resource])
+    @request = Request.new(params[:request])
     if @request.save
-      render :nothing => true
+      render :action => 'show'
     else
-      render :new
+      render :action => 'new'
     end
   end
 
   def update
-    render :edit if !@request.update_attributes(params[:resource])
+    if @request.update_attributes(params[:request])
+      render :action => 'show'
+    else
+      render :action => 'edit'
+    end
   end
 
   def destroy
     @request.destroy
+    render :action => 'index'
   end
 
   private
 
   def resource
-    binding.pry
     @request = Request.find(params[:id])
   end
 

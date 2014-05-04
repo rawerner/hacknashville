@@ -10,11 +10,12 @@ describe RequestsController do
 
   describe "POST #create" do
     it "should assign a new request" do
-      request = build(:request)
       get :create
       Request.all.size.should == 1
     end
   end
+
+  # having trouble adding in parameters for the new Rspec. Must investigate!!!
 
   # describe "PUT #update" do
   #   it "should assign a new request" do
