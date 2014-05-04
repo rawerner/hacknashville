@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   match '/about',         to: 'static_pages#about',         via: 'get'
   match '/privacy',       to: 'static_pages#privacy',       via: 'get'
   match ':controller(/:action(/:id))', :via => 'get'
+  match '/back_end_engineering',    to: 'careers#back_end_engineering',    via: 'get'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
