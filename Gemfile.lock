@@ -239,7 +239,7 @@ DEPENDENCIES
   coveralls
   database_cleaner
   devise
-  factory_girl_rails
+  factory_girl_rails (~> 4.0)
   jbuilder (~> 2.0)
   jquery-rails
   launchy

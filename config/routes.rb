@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :mentors
   devise_for :mentees
   resources :mentees
+  resources :requests
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 

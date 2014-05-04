@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140504160526) do
+ActiveRecord::Schema.define(version: 20140504172822) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,9 +39,7 @@ ActiveRecord::Schema.define(version: 20140504160526) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "interest",               array: true
-    t.string   "first_name"
-    t.string   "last_name"
+    t.string   "interest",                                         array: true
   end
 
   add_index "mentees", ["email"], name: "index_mentees_on_email", unique: true, using: :btree
@@ -70,6 +68,11 @@ ActiveRecord::Schema.define(version: 20140504160526) do
   create_table "requests", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "approval_status"
+    t.string   "messages",        array: true
+    t.string   "feedback"
+    t.string   "mentor_id"
+    t.string   "mentee_id"
   end
 
 end
