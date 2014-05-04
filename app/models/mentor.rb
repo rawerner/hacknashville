@@ -4,6 +4,26 @@ class Mentor < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  validates :password, on: :create, allow_blank: true
+
   has_many :mentees
   has_many :requests
+
+  def self.find_or_create_from_auth_hash(auth_hash)
+    mentor = Mentor.where(:email => auth_hash[:info][:email]).first
+
+    if mentor.blank?
+      mentor = Mentor.new(
+        email: auth_hash[:info][:email],
+        first_name: auth_hash[:info][:first_name],
+        last_name: auth_hash[:info][:last_name],
+        photo_url: auth_hash[:extra][:raw_info][:pictureUrl],
+        skills: auth_hash[:extra][:raw_info][:skills][:values]
+        # needs a password!!!!
+      )
+      mentor.save!
+    end
+    mentor
+  end
+
 end
