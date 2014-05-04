@@ -3,4 +3,8 @@ class Mentee < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+  def interests
+    mentee = Mentee.select('interest').where(email: self.email)
+    mentee[0].interest
+  end
 end
