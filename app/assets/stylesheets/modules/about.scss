@@ -1,0 +1,16 @@
+@import 'base/base';
+
+.container-pink-background {
+	background-color: $very-light-pink;
+	padding: 3% 0 5% 0;
+}
+
+header.content-header {
+	font-weight: bold;
+	padding: 2% 0;
+}
+
+p.content-container {
+	font-size: $base-font-size;
+}
+
